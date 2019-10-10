@@ -13,12 +13,12 @@
 		<img id="header-img" src="https://dummyimage.com/1x1/fff/0011ff.jpg">
 	<img id="header-img2" src="water3.png" alt="left side logo" width="60" height="auto">
 	<img id="otherSide" src="water3.png" alt="right side logo" width="60" height="auto">
-
 	<nav id="nav-bar">
 <ul id="navBarList">
-	<li><a href="#intro" class="nav-link">intro</a></li>
-	<li><a href="#mainContent" class="nav-link">nav 2</a></li>
-	<li><a href="#foot" class="nav-link">nav 3</a></li>
+	<li class="leftSide"><a href="#intro" class="nav-link">Why SSL</a></li>
+	<li class="leftSide"><a href="#mainContent" class="nav-link">Video</a></li>
+	<li class="LeftSide"><a href="#productAndPrice" class="nav-link">Products</a></li>
+	<li class="rightSide"><a href="#contact" class="nav-link">Contact Us</a></li>
 </ul>
 	</nav>
 </header>
@@ -27,30 +27,67 @@
 <div id="mainContent">
 	<body>
 		<div id="intro">
+			<p id="welcomeInfo">Welcome to Super Shiny Liquids! We sell <em>THE</em> liquids that will make anyone go "<i>Shiny!</i>"<br>
+				We have a nice selection of Red, Green, and Blue liquids for you to choose from. If those colors aren't to your liking we 
+				have a custom color picker option for you to choose from. We can make a shiny liquid in any color you want! See the items
+				section for information and pricing for custom colors.
 		</div>
 		<iframe width="560" height="315" src="https://www.youtube.com/embed/sKFMgVfh2eM"  id="video"></iframe>
 	</body>
 </div>
+
 <div id="productAndPrice">
-	<label id="productLabel">Products
-		<div class="items>">
-	<div class="red">
-		<h3 id="redLiquid">Red Liquid</h3>
-		<p id="whyRed">red gud cause reasons</p>
+	<div id="products">
+	<label id="productLabel">Products</label>
+</div>
+<div class="items">
+	<div class="listing" id="red">
+		<h3 id="redLiquid" class="liquidColor">Red Liquid</h3>
+		<h3 class="money">$1000/L</h3>
+		<ul class="wry" id="whyRed">
+			<li>red </li>
+			<li>yes</li>
+			<li>no</li>
+		</ul>
 	</div>
-<div class="blue">
-	<h3 id="blueLiquid">Blue Liquid</h3>
-	<p id="whyBlue">blue gud cause reasons</p>
+
+<div class="listing" id="green">
+	<h3 id="greenLiquid" class="liquidColor">Green Liquid</h3>
+	<h3 class="money">$1000/L</h3>
+	<ul class="wry" id="whyGreen">
+		<li>yes</li>
+		<li>no</li>
+		<li>maybe</li>
+	</ul>
 </div>
-<div class="green">
-	<h3 id="greenLiquid">Green Liquid</h3>
-	<p id="whyGreen">green gud cause reasons</p>
+
+<div class="listing" id="blue">
+	<h3 id="blueLiquid" class="liquidColor">Blue Liquid</h3>
+	<h3 class="money">$1000/L</h3>
+	<ul class="wry" id="whyBlue">
+		<li>yes</li>
+		<li>no</li>
+		<li>mebbe</li>
+	</ul>
+</div>
+
+<div class="listing" id="custom">
+	<h3 id="customLiquid" class="liduidColor">Custom Liquid</h3>
+	<h3 class="money">$4000/L</h3>
+	<ul class="wry" id="whyCustom">
+		<li>yes</li>
+		<li>no</li>
+		<li>something</li>
+	</ul>
+	<input id="wavelength" placeholder="wavelength" type="text">
 </div>
 </div>
+</div>
+
 	<footer id="foot">
 		<form id="form" action="https://www.freecodecamp.com/email-submit">
 			<label id="emailField">Email</label>
-			<input email required placeholder="email here" type="email" id="email" name="email">
+			<input required placeholder="email here" type="email" id="email" name="email">
 			<input type="submit" id="submit">
 		</form>
 	</footer>
